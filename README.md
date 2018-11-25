@@ -5,17 +5,17 @@
 In this code pattern we will help to create a Watson Visual Recognition Image training app that leverages the IoT Platform. 
 We will be using Watson's below services:
 
-1. Speech To Text(STT)
-2. Text To Speech(TTS)
-3. Visual Recognition(VR)
+1. Speech To Text (STT)
+2. Text To Speech (TTS)
+3. Visual Recognition (VR)
 4. Watson IoT
 5. Cloudant NoSQL storage service
 
 For quick intro see <a href="src/extresources/images/intro.mp4">this video</a>
 
 This code pattern consists of below two applications:
-1. Training App(to create and train a new custom classifier using Watson's VR)
-2. Prediction App(to demonstrate the prediction results of each image through created custom classifier including default one.)
+1. Training App (to create and train a new custom classifier using Watson's VR)
+2. Prediction App (to demonstrate the prediction results of each image through created custom classifier including default one.)
 
 Watson Visual Recognition Image training app is standalone java based application which can be run independently on device which has valid jre installed such as MacBook or any linux/Windows based operating system.
 
@@ -56,7 +56,7 @@ Note: this app has been tested on MacBook with below versions:
 	d. IoT (created in previous step)<br/>
 	e. Cloudant NoSQL(created in previus step)<br/>
 	
-Note: You can mannually add your precreated Watson services as shown below by clicking to "Connections" in left menu panel.
+Note: You can manually add your precreated Watson services as shown below by clicking to "Connections" in left menu panel.
 <img src="src/extresources/images/Snip20180207_35.png" allign="center"/>
 
 <h1>Before you begin:</h1><br/>
@@ -67,7 +67,7 @@ Note: You can mannually add your precreated Watson services as shown below by cl
 	2. On this page you will see Launch button, click this. 
 <img src="src/extresources/images/Snip20180202_16.png" allign="center"/>
 
-	3. This will open saperate IBM Watson IoT Platform home page for your service.
+	3. This will open separate IBM Watson IoT Platform home page for your service.
 	
 	4. Select DEVICES option in left menu panel.
 <img src="src/extresources/images/Snip20180202_17.png" allign="center"/>
@@ -100,7 +100,7 @@ Note: You can mannually add your precreated Watson services as shown below by cl
 
 	1. goto the home page of boilerplate app created in Pre Requisite steps.
 	2. click "overview" menu option in left page panel.
-	3. on current page you will see "Visit App URL" hyper link. This will load your Node-Red editor in saperate page.
+	3. on current page you will see "Visit App URL" hyper link. This will load your Node-Red editor in separate page.
 <img src="./src/extresources/images/Snip20180202_15.png" allign="left"/>
 	
 	Note: execute below steps 4 and 5, if you don't have the base-64 node plugin else continue from step-6 
@@ -125,7 +125,7 @@ Note: You can mannually add your precreated Watson services as shown below by cl
 1. Clone this application code into your local env using 'git clone <git-URL>'
 2. Create an ".properties" file similar to "sample-properties.properties" provided.
 3. Update Watson IBM Cloud credentials in for each service in this created ".properties" file.
-3. Run the maven build through 'mvn clean package'. This will create 3 jars(one with dependencies, one with app code binaries and one containing both(WatsonVRTrainingApp-0.0.1-jar-with-dependencies.jar))
+3. Run the maven build through 'mvn clean package'. This will create 3 jars (one with dependencies, one with app code binaries and one containing both (WatsonVRTrainingApp-0.0.1-jar-with-dependencies.jar))
 4. Main class to start any of above mentioned app is com.ibm.watson.WatsonVRTraining.LaunchApp. 
 
 You can run any of below application:
